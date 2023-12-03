@@ -1,0 +1,3 @@
+*.aes linguist-language=MayOS-Script
+*.aess linguist-language=MayOS-Script-Alt
+*.aedll linguist-language=MayOS-Script-DLL
