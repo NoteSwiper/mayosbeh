@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://note-swiper.f5.si/schema/2023-mayos.schema.json",
+    "title": "MayOS System Config Schema",
+    "description": "A schema for MayOS System Configuration.",
+    "type": "object",
+    "properties": {
+        "system": {
+            "description": "Configuration for mayos-core.system",
+            "type": "object",
+            "properties": {
+                "info": {
+                    "description": "Information for mayos-core.system",
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "description": "A name for package",
+                            "type": "array"
+                        },
+                        "version": {
+                            "description": "A version for package",
+                            "type": "array"
+                        },
+                        "build": {
+                            "description": "A build number for package",
+                            "type": "string"
+                        },
+                        "productName": {
+                            "description": "A product type for package",
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "minItems": 1,
+                            "uniqueItems": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
